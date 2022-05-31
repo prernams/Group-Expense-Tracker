@@ -1,0 +1,1 @@
+{"groups": [{"name": "Test", "Members": ["A", "B", "C"]}], "expense": [{"name": "Test", "items": []}], "balances": [{"name": "Test", "balances": [{"A": {"total_balance": 40, "owes_to": [], "owed_by": [{"C": 40}]}}, {"B": {"total_balance": 10, "owes_to": [], "owed_by": [{"C": 10}]}}, {"C": {"total_balance": -50, "owes_to": [{"A": 40}, {"B": 10}], "owed_by": []}}]}]}
