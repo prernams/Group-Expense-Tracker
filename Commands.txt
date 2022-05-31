@@ -1,0 +1,10 @@
+GET: http://127.0.0.1:5000	#To see the entire DB
+GET: http://127.0.0.1:5000/group	#To see the groups created
+GET: http://127.0.0.1:5000/expense	#To see the list of expenses
+POST: http://127.0.0.1:5000/group?name=Test&Members=[A,B]	#To create new Expense
+POST: http://127.0.0.1:5000/expense?group=Test&item=Pen&value=200&paid_by=[{"A":140},{"B":60}]&owed_by=[{"A":100},{"B":50},{"C":50}]
+POST: http://127.0.0.1:5000/expense?group=Test&item=Books&value=20&paid_by=[{"A":20}]&owed_by=[{"A":10},{"B":10}]
+GET: http://127.0.0.1:5000/balance #To see all balances
+PUT: http://127.0.0.1:5000/expense?group=Test&item=Pen&value=250	#To update Values of already existing Expenses
+PUT: http://127.0.0.1:5000/expense?group=Test&item=Pen&owed_by=[{"D":30}]
+DELETE: http://127.0.0.1:5000/expense?group=Test&item=Pen #To delete Expenses
